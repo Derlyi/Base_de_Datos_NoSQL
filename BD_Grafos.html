@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSQL</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+      <!-- Menu -->
+    <div class="wrapper">
+      <aside id="sidebar">
+          <div class="d-flex">
+              <button class="toggle-btn" type="button">
+                  <i class="lni lni-grid-alt"></i>
+              </button>
+              <div class="sidebar-logo">
+                  <a href="NoSQL.html">NoSQL</a>
+              </div>
+          </div>
+          <ul class="sidebar-nav">
+              <li class="sidebar-item">
+                  <a href="BD_Documentales.html" class="sidebar-link">
+                      <i class="lni lni-user"></i>
+                      <span>BD_Documentales</span>
+                  </a>
+              </li>
+              <li class="sidebar-item">
+                  <a href="BD_Clave-Valor.html" class="sidebar-link">
+                      <i class="lni lni-agenda"></i>
+                      <span>BD_Clave-Valor</span>
+                  </a>
+              </li>
+             
+              <li class="sidebar-item">
+                  <a href="BD_Orientada-Columnas.html" class="sidebar-link">
+                      <i class="lni lni-popup"></i>
+                      <span>BD_Orientada-Columnas</span>
+                  </a>
+              </li>
+              <li class="sidebar-item">
+                  <a href="BD_Grafos.html" class="sidebar-link">
+                      <i class="lni lni-control-panel"></i>
+                      <span>BD_Grafos</span>
+                  </a>
+              </li>
+              
+          </ul>
+          
+          <div class="sidebar-footer">
+              <a href="index.html" class="sidebar-link">
+                  <i class="lni lni-exit"></i>
+                  <span>Cerrar Sesión</span>
+              </a>
+          </div>
+      </aside>
+        <div class="main p-3">
+            <div class="text-center">
+                <h1>
+                    BASES DE DATOS DE GRAFOS
+                </h1>
+                 <!-- Fin Menu -->
+
+
+                  <!-- Neo4j -->
+                 <div class="row row-cols-1 g-4 py-5">
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <h3 class="card-title"><strong>Neo4j</strong></h3>
+                          <img src="img/Neo4j.png" class="card-img-top" style="width: 300px;" alt="MongoDB">
+                          <p class="card-text">Neo4j, al igual que las bases de datos que ya hemos mencionado, es un sistema de gestión de bases de datos (SGBD). Sin embargo, a diferencia de las bases de datos relacionales tradicionales como MySQL o PostgreSQL, y de las bases de datos NoSQL como MongoDB o Cassandra, Neo4j es una base de datos de grafos.</p>
+                          <h6 class="card-title py-3"><strong>¿Qué significa una base de datos de grafos?</strong></h6>
+                          <p class="card-text">En lugar de almacenar datos en tablas y relaciones definidas por esquemas, las bases de datos de grafos como Neo4j almacenan información en forma de grafos. Los grafos se componen de nodos (entidades) y aristas (relaciones entre entidades). Esto permite modelar relaciones complejas y dinámicas entre los datos de una manera más natural e intuitiva.</p>
+                          
+                          <!-- caracteristicas -->
+                          <h6 class="card-title py-3"><strong>Características:</strong></h6>
+
+                          <ol class="list-group list-group-numbered text-center py-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Modelo de datos de grafos</div>
+                                Almacena y relaciona datos de forma natural utilizando nodos y aristas, permitiendo modelar relaciones complejas.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Cypher</div>
+                                Utiliza Cypher, un lenguaje de consulta declarativo y potente, para interactuar con los datos de forma intuitiva y eficiente.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Alto rendimiento</div>
+                                Optimizado para consultas de grafos complejos, ofreciendo un rendimiento rápido incluso con grandes conjuntos de datos.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">Escalabilidad</div>
+                                  Altamente escalable de forma horizontal para adaptarse a aplicaciones con necesidades cambiantes.
+                                </div>
+                              </li>
+
+                              <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">Aplicaciones</div>
+                                  Ideal para aplicaciones que requieren análisis de redes sociales, detección de fraude, recomendaciones de productos, gestión de conocimiento y otras áreas donde las relaciones entre entidades son cruciales.
+                                </div>
+                              </li>
+                          </ol>
+
+                        </div>
+                      </div>
+                    </div>
+
+        
+            </div>
+        </div>
+    </div>
+    <!-- Fin -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
