@@ -28,7 +28,7 @@
           <ul class="sidebar-nav">
               <li class="sidebar-item">
                   <a href="BD_Documentales.html" class="sidebar-link">
-                      <i class="lni lni-user"></i>
+                      <i class="lni lni-control-panel"></i>
                       <span>BD_Documentales</span>
                   </a>
               </li>
@@ -61,25 +61,38 @@
               </a>
           </div>
       </aside>
+      <!-- Fin Menu -->
+
         <div class="main p-3">
             <div class="text-center">
                 <h1>
                     BASES DE DATOS DOCUMENTALES
                 </h1>
-                 <!-- Fin Menu -->
-
-
-                  <!-- MongoDB -->
-                 <div class="row row-cols-1 row-cols-md-2 g-4 py-5">
+                 
+                <!-- base de datos documentales -->
+                 <div class="card mb-3">
+                  <img src="img/documentales.jpg" class="card-img-top img-fluid" style="height: 400px;" alt="bd_documentales">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>¿Qué son las Bases de Datos Documentales?</strong></h5>
+                    <p class="card-text">Son un tipo de base de datos NoSQL que almacena datos en documentos. Como su propio nombre indica, las bases de datos orientadas a documentos utilizan documentos para el almacenamiento de todos los registros y los datos asociados a ellos. Cada uno de estos registros puede almacenar distintos tipos de datos. A su vez, los documentos que contienen los registros pueden tener diferentes formatos, desde archivos JSON o XML hasta documentos de texto.</p>
+                  </div>
+                </div>
+                  
+                 <!-- MongoDB -->
+                 <div class="row row-cols-1 row-cols-md-2 g-4 ">
                     <div class="col">
                       <div class="card">
                         <div class="card-body">
                           <h3 class="card-title"><strong>MongoDB</strong></h3>
-                          <img src="img/mongodb.png" class="card-img-top" style="width: 300px;" alt="MongoDB">
+                          <img src="img/mongodb.png" class="card-img-top img-fluid" style="width: 300px;" alt="MongoDB">
                           <p class="card-text">MongoDB es una base de datos NoSQL de código abierto que almacena datos en documentos similares a JSON. Es una opción popular para las aplicaciones modernas que necesitan manejar grandes cantidades de datos no estructurados.</p>
                         
+                        <!-- funcionamiento -->
+                        <h5 class="card-title"><strong>Funcionamiento:</strong></h5>
+                        <p class="card-text">A diferencia de las bases de datos relacionales tradicionales, que almacenan datos en tablas con un esquema fijo, MongoDB utiliza un modelo de datos orientado a documentos. Los documentos pueden contener diferentes campos y valores, y no hay un esquema predefinido para la base de datos. Esto hace que MongoDB sea muy flexible y escalable, ya que permite añadir nuevos campos y documentos a la base de datos sin necesidad de modificar la estructura existente.</p>
+                          
                           <!-- caracteristicas -->
-                          <h6 class="card-title"><strong>Características:</strong></h6>
+                          <h5 class="card-title"><strong>Características:</strong></h5>
 
                           <ol class="list-group list-group-numbered py-3">
                             <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -111,10 +124,47 @@
                               </li>
                           </ol>
 
+                      <!-- desventajas -->
+                      <h5 class="card-title"><strong>Desventajas:</strong></h5>
+
+                        <ol class="list-group list-group-numbered py-3">
+                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                            <div class="fw-bold">Consistencia</div>
+                            No ofrece el mismo nivel de consistencia que las bases de datos relacionales, las consultas devuelvan resultados inconsistentes en algunos casos.
+                            </div>
+                          </li>
+
+                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                              <div class="fw-bold">Transacciones</div>
+                              No es compatible con las transacciones ACID, no es ideal para aplicaciones que requieren transacciones atómicas.
+                            </div>
+                          </li>
+
+                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                              <div class="fw-bold">Madurez</div>
+                              MongoDB es una tecnología relativamente nueva, no está tan bien probada como algunas bases de datos relacionales.
+                            </div>
+                          </li>
+
+                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Consultas complejas</div>
+                                Las consultas complejas pueden ser más difíciles de escribir en MongoDB que en las bases de datos relacionales.
+                              </div>
+                            </li>
+                        </ol>
+
+                        <!-- sitio documentacion -->
+                        <p class="card-text"><strong>Página Oficial de Documentación:</strong> <a href="https://www.mongodb.com/">MongoDB</a></p>
+                          
                         </div>
                       </div>
                     </div>
 
+                    
                     <!-- Cloud Firestore -->
                     <div class="col">
                       <div class="card">
@@ -123,8 +173,12 @@
                           <img src="img/Cloud_Filestore.png" class="card-img-top" style="width: 130px;" alt="Cloud Firestore">
                           <p class="card-text">Cloud Firestore es una base de datos NoSQL alojada en la nube desarrollada por Google para su plataforma Firebase. A diferencia de MongoDB, que es una solución independiente, Firestore se integra específicamente con los servicios de Google Cloud.</p>
                         
+                        <!-- funcionamiento -->
+                        <h5 class="card-title"><strong>Funcionamiento:</strong></h5>
+                        <p class="card-text">Firebase envía automáticamente eventos a las aplicaciones cuando los datos cambian, almacenando los datos nuevos en el disco. Aunque no hubiera conexión por parte de un usuario, sus datos estarían disponibles para el resto y los cambios realizados se sincronizarían una vez restablecida la conexión.</p>
+                          
                           <!-- caracteristicas -->
-                          <h6 class="card-title"><strong>Características:</strong></h6>
+                          <h5 class="card-title"><strong>Características:</strong></h5>
 
                           <ol class="list-group list-group-numbered py-3">
                             <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -155,6 +209,42 @@
                                 </div>
                               </li>
                           </ol>
+
+                      <!-- desventajas -->
+                      <h5 class="card-title"><strong>Desventajas:</strong></h5>
+
+                      <ol class="list-group list-group-numbered py-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                          <div class="fw-bold">Limitaciones de consultas</div>
+                          Firestore está diseñado para consultas simples y no admite consultas complejas como las que se pueden realizar en bases de datos relacionales.
+                          </div>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Dependencia del proveedor</div>
+                            Firestore es un servicio de Google Cloud Platform, por lo que estás sujeto a las políticas y limitaciones de Google. Si decides cambiar de proveedor de nube en el futuro, podrías tener dificultades para migrar tus datos a otra plataforma.
+                          </div>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Paginación limitada</div>
+                            La paginación de resultados de consultas en Firestore puede ser un poco limitada, especialmente para grandes conjuntos de datos.
+                          </div>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Costos</div>
+                            Las tarifas de Firestore pueden ser impredecibles, especialmente si tienes picos repentinos de tráfico.
+                          </div>
+                        </li>
+                      </ol>
+
+                      <!-- sitio documentacion -->
+                      <p class="card-text"><strong>Página Oficial de Documentación:</strong> <a href="https://firebase.google.com/products/firestore?hl=es-419">Cloud Firestore</a></p>
 
                         </div>
                       </div>

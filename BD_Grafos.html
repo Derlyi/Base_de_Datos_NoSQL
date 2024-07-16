@@ -28,7 +28,7 @@
           <ul class="sidebar-nav">
               <li class="sidebar-item">
                   <a href="BD_Documentales.html" class="sidebar-link">
-                      <i class="lni lni-user"></i>
+                      <i class="lni lni-control-panel"></i>
                       <span>BD_Documentales</span>
                   </a>
               </li>
@@ -61,64 +61,111 @@
               </a>
           </div>
       </aside>
-        <div class="main p-3">
-            <div class="text-center">
-                <h1>
-                    BASES DE DATOS DE GRAFOS
-                </h1>
                  <!-- Fin Menu -->
+                 <div class="main p-3">
+                  <div class="text-center">
+                      <h1>
+                          BASES DE DATOS DE GRAFOS
+                      </h1>
+                       
+                      <!-- base de datos grafos -->
+                       <div class="card mb-3">
+                        <img src="img/grafos.jpg" class="card-img-top img-fluid" style="height: 400px;" alt="bd_grafos">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>¿Qué son las Bases de Datos de Grafos?</strong></h5>
+                          <p class="card-text">Las bases de datos de grafos, también conocidas como GDBs (por sus siglas en inglés Graph Databases), son un tipo de base de datos NoSQL que almacena y gestiona datos en forma de grafos. Un grafo es una estructura de datos compuesta por nodos y aristas. Los nodos representan entidades en el mundo real, como personas, lugares, productos o eventos, mientras que las aristas representan las relaciones entre esos nodos.</p>
 
+                        </div>
+                      </div>
 
                   <!-- Neo4j -->
-                 <div class="row row-cols-1 g-4 py-5">
+                 <div class="row row-cols-1 g-4 py-3">
                     <div class="col">
                       <div class="card">
                         <div class="card-body">
                           <h3 class="card-title"><strong>Neo4j</strong></h3>
                           <img src="img/Neo4j.png" class="card-img-top" style="width: 300px;" alt="MongoDB">
                           <p class="card-text">Neo4j, al igual que las bases de datos que ya hemos mencionado, es un sistema de gestión de bases de datos (SGBD). Sin embargo, a diferencia de las bases de datos relacionales tradicionales como MySQL o PostgreSQL, y de las bases de datos NoSQL como MongoDB o Cassandra, Neo4j es una base de datos de grafos.</p>
-                          <h6 class="card-title py-3"><strong>¿Qué significa una base de datos de grafos?</strong></h6>
-                          <p class="card-text">En lugar de almacenar datos en tablas y relaciones definidas por esquemas, las bases de datos de grafos como Neo4j almacenan información en forma de grafos. Los grafos se componen de nodos (entidades) y aristas (relaciones entre entidades). Esto permite modelar relaciones complejas y dinámicas entre los datos de una manera más natural e intuitiva.</p>
                           
+                          <!-- funcionamiento -->
+                          <h5 class="card-title"><strong>Funcionamiento:</strong></h5>
+                          <p class="card-text py-1">Neo4j es una base de datos de grafos NoSQL de código abierto altamente escalable y potente, diseñada para almacenar y gestionar grandes conjuntos de datos interconectados. A diferencia de las bases de datos relacionales tradicionales que almacenan datos en tablas con filas y columnas, Neo4j utiliza un modelo de datos basado en grafos, compuesto por nodos, propiedades y relaciones.</p>
+
                           <!-- caracteristicas -->
-                          <h6 class="card-title py-3"><strong>Características:</strong></h6>
+                          <h5 class="card-title py-3"><strong>Características:</strong></h5>
 
                           <ol class="list-group list-group-numbered text-center py-3">
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                               <div class="ms-2 me-auto">
                                 <div class="fw-bold">Modelo de datos de grafos</div>
-                                Almacena y relaciona datos de forma natural utilizando nodos y aristas, permitiendo modelar relaciones complejas.
+                                Neo4j adopta un modelo de datos basado en grafos, donde la información se organiza en nodos (entidades) y relaciones (conexiones entre entidades). Esta estructura flexible permite representar relaciones complejas y dinámicas que son difíciles de capturar en bases de datos relacionales tradicionales.
                               </div>
                             </li>
 
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                               <div class="ms-2 me-auto">
                                 <div class="fw-bold">Cypher</div>
-                                Utiliza Cypher, un lenguaje de consulta declarativo y potente, para interactuar con los datos de forma intuitiva y eficiente.
+                                Utiliza Cypher, un lenguaje de consulta declarativo y potente, para interactuar con los datos de forma intuitiva y eficiente. A diferencia de SQL, Cypher está optimizado para el procesamiento de grafos, lo que permite un rendimiento superior en consultas que atraviesan relaciones entre entidades.
                               </div>
                             </li>
 
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                               <div class="ms-2 me-auto">
-                                <div class="fw-bold">Alto rendimiento</div>
-                                Optimizado para consultas de grafos complejos, ofreciendo un rendimiento rápido incluso con grandes conjuntos de datos.
+                                <div class="fw-bold">Alta disponibilidad y tolerancia a fallos</div>
+                                Neo4j implementa la replicación de datos entre nodos del clúster, asegurando la alta disponibilidad y la tolerancia a fallos. En caso de que un nodo falle, los datos replicados en otros nodos garantizan la continuidad del servicio y la integridad de la información.
                               </div>
                             </li>
 
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
-                                  <div class="fw-bold">Escalabilidad</div>
-                                  Altamente escalable de forma horizontal para adaptarse a aplicaciones con necesidades cambiantes.
+                                  <div class="fw-bold">Rendimiento optimizado</div>
+                                  Neo4j está optimizada para el procesamiento de grafos, utilizando algoritmos eficientes para consultas y operaciones de datos. Esto se traduce en un rendimiento superior, especialmente al navegar por relaciones entre nodos y realizar análisis de grafos complejos.
                                 </div>
                               </li>
 
                               <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
-                                  <div class="fw-bold">Aplicaciones</div>
-                                  Ideal para aplicaciones que requieren análisis de redes sociales, detección de fraude, recomendaciones de productos, gestión de conocimiento y otras áreas donde las relaciones entre entidades son cruciales.
+                                  <div class="fw-bold">Facilidad de uso y comunidad activa</div>
+                                  Neo4j ofrece una interfaz de usuario gráfica intuitiva y una amplia documentación para facilitar el aprendizaje y el uso de la base de datos. Además, cuenta con una comunidad activa de desarrolladores y usuarios que brindan soporte y comparten recursos en línea.
                                 </div>
                               </li>
                           </ol>
+
+                          <!-- desventajas -->
+                          <h5 class="card-title py-3"><strong>Desventajas:</strong></h5>
+
+                          <ol class="list-group list-group-numbered text-center py-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Curva de aprendizaje</div>
+                                Neo4j presenta un modelo de datos y un lenguaje de consulta (Cypher) únicos que pueden requerir un esfuerzo de aprendizaje para usuarios no familiarizados con los grafos.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Complejidad del modelo de datos</div>
+                                El modelo de datos flexible de Neo4j, si bien ofrece ventajas para representar relaciones complejas, puede aumentar la complejidad del diseño y la gestión de la base de datos, especialmente para conjuntos de datos grandes o estructuras de grafos intrincadas.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Costos de licenciamiento para implementaciones a gran escala</div>
+                                La versión comercial de Neo4j, Neo4j Enterprise, ofrece funcionalidades adicionales y soporte mejorado, pero implica costos de licenciamiento que pueden ser considerables para implementaciones a gran escala o entornos empresariales.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">Potencial para cuellos de botella en consultas complejas</div>
+                                  Si bien Neo4j está optimizada para consultas de grafos, algunas consultas complejas que involucran un gran número de nodos o relaciones pueden presentar un rendimiento más lento. Es importante realizar un análisis de rendimiento y optimizar las consultas para evitar cuellos de botella en aplicaciones con alta demanda o conjuntos de datos masivos.
+                                </div>
+                              </li>
+                          </ol>
+
+                          <!-- sitio documentacion -->
+                          <p class="card-text"><strong>Página Oficial de Documentación:</strong> <a href="https://neo4j.com/">Neo4j</a></p>
 
                         </div>
                       </div>

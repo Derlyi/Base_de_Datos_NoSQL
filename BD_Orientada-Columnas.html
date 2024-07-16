@@ -28,7 +28,7 @@
           <ul class="sidebar-nav">
               <li class="sidebar-item">
                   <a href="BD_Documentales.html" class="sidebar-link">
-                      <i class="lni lni-user"></i>
+                      <i class="lni lni-control-panel"></i>
                       <span>BD_Documentales</span>
                   </a>
               </li>
@@ -61,15 +61,24 @@
               </a>
           </div>
       </aside>
-        <div class="main p-3">
-            <div class="text-center">
-                <h1>
-                    BASES DE DATOS ORIENTADAS A COLUMNAS
-                </h1>
                  <!-- Fin Menu -->
 
+                 <div class="main p-3">
+                  <div class="text-center">
+                      <h1>
+                          BASES DE DATOS ORIENTADAS A COLUMNAS
+                      </h1>
+                       
+                      <!-- base de datos orientadas a columnas -->
+                       <div class="card mb-3">
+                        <img src="img/columnas.jpg" class="card-img-top img-fluid" style="height: 400px;" alt="bd_clave-valor">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>¿Qué son las Bases de Datos Orientadas a Columnas?</strong></h5>
+                          <p class="card-text">Las bases de datos orientadas a columnas (BDOCs), también conocidas como column stores en inglés, son un tipo de base de datos NoSQL que optimizan el almacenamiento y la recuperación de datos para análisis de grandes volúmenes de información. A diferencia de las bases de datos relacionales tradicionales, que almacenan datos en filas, las BDOCs almacenan datos en columnas.</p>
+                        </div>
+                      </div>
 
-                  <!-- Redis -->
+                  <!-- cassandra -->
                  <div class="row row-cols-1 g-4 py-4">
                     <div class="col">
                       <div class="card">
@@ -77,11 +86,14 @@
                           <h3 class="card-title"><strong>CASSANDRA</strong></h3>
                           <img src="img/Cassandra.png" class="card-img-top" style="width: 300px;" alt="MongoDB">
                           <p class="card-text py-3">Cassandra almacena los datos como almacenes clave-valor. Permite definir tablas mediante filas y columnas, pero la estructura tabular no se utiliza en el almacenamiento real. En su lugar, utiliza el modelo de base de datos de columnas anchas, por lo que cada fila de la tabla puede tener un conjunto de columnas diferente.
-
                             Puede agrupar las columnas en familias de columnas según su tipo de datos o su uso. Cada fila tiene una clave principal que puede utilizar para leer rápidamente los datos de Cassandra.</p>
-                        
+                            
+                            <!-- funcionamiento -->
+                            <h5 class="card-title"><strong>Funcionamiento:</strong></h5>
+                            <p class="card-text py-3">Cassandra se basa en una arquitectura distribuida y replicada, compuesta por nodos que trabajan juntos para almacenar y procesar datos. Cada nodo almacena una parte del conjunto de datos completo, lo que permite distribuir la carga y aumentar la disponibilidad. En Cassandra, los datos se organizan en keyspaces, que son similares a las bases de datos en las bases de datos relacionales. Dentro de cada keyspace, los datos se almacenan en tablas, que son similares a las tablas en las bases de datos relacionales. Las tablas de Cassandra no tienen un esquema definido, lo que significa que las columnas se pueden agregar y eliminar de forma dinámica. Las filas en Cassandra se identifican por una clave primaria, que puede ser una sola columna o una combinación de columnas. Los valores en Cassandra se almacenan en columnas, que pueden ser de diferentes tipos de datos, como cadenas de caracteres, números, fechas y blobs.</p>
+
                           <!-- caracteristicas -->
-                          <h6 class="card-title"><strong>Características:</strong></h6>
+                          <h5 class="card-title"><strong>Características:</strong></h5>
 
                           <ol class="list-group list-group-numbered py-3">
                             <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -101,7 +113,7 @@
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                               <div class="ms-2 me-auto">
                                 <div class="fw-bold">Disponibilidad siempre activa</div>
-                                Cassandra está pensada para funcionar sin interrupciones, evitando la pérdida de datos.
+                                Cassandra está pensada para funcionar sin interrupciones, evitando la pérdida de datos. Cassandra proporciona una API de Java y C++ fáciles de usar para el desarrollo de aplicaciones.
                               </div>
                             </li>
 
@@ -112,6 +124,42 @@
                                 </div>
                               </li>
                           </ol>
+
+                          <!-- desventajas -->
+                          <h5 class="card-title"><strong>Desventajas:</strong></h5>
+
+                          <ol class="list-group list-group-numbered py-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Complejidad del modelo de datos</div>
+                                A diferencia de las bases de datos relacionales con un esquema definido, Cassandra utiliza un modelo de datos flexible sin esquema, lo que puede dificultar el modelado de datos complejos y las relaciones entre ellos.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Consistencia eventual</div>
+                                El modelo de consistencia eventual de Cassandra puede generar problemas en aplicaciones que requieren una fuerte consistencia de datos en tiempo real. Los cambios en los datos pueden no propagarse inmediatamente a todos los nodos del clúster, lo que puede ocasionar discrepancias temporales en la lectura de datos.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Soporte limitado para transacciones ACID</div>
+                                Las transacciones ACID en Cassandra tienen limitaciones en cuanto al número de filas involucradas y al aislamiento entre transacciones. Se deben evaluar alternativas como bases de datos relacionales o soluciones de bases de datos híbridas para aplicaciones con demandas transaccionales exigentes.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">Dependencia del clúster</div>
+                                  Si un nodo falla, la aplicación puede experimentar interrupciones o degradación del rendimiento hasta que se repare o reemplace el nodo. Se requieren estrategias de alta disponibilidad y tolerancia a fallos para garantizar la continuidad del servicio.
+                                </div>
+                              </li>
+                          </ol>
+
+                            <!-- sitio documentacion -->
+                            <p class="card-text"><strong>Página Oficial de Documentación:</strong> <a href="https://cassandra.apache.org/_/index.html">Cassandra</a></p>
 
                         </div>
                       </div>

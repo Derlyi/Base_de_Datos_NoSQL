@@ -28,7 +28,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
                     <a href="BD_Documentales.html" class="sidebar-link">
-                        <i class="lni lni-user"></i>
+                        <i class="lni lni-control-panel"></i>
                         <span>BD_Documentales</span>
                     </a>
                 </li>
@@ -61,13 +61,22 @@
                 </a>
             </div>
         </aside>
-        <div class="main p-3">
-            <div class="text-center">
-                <h1>
-                    BASES DE DATOS CLAVE-VALOR
-                </h1>
                  <!-- Fin Menu -->
 
+                 <div class="main p-3">
+                  <div class="text-center">
+                      <h1>
+                          BASES DE DATOS CLAVE - VALOR
+                      </h1>
+                       
+                      <!-- base de datos clave-valor -->
+                       <div class="card mb-3">
+                        <img src="img/clave-valor.jpg" class="card-img-top img-fluid" style="height: 400px;" alt="bd_clave-valor">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>¿Qué son las Bases de Datos Clave - Valor?</strong></h5>
+                          <p class="card-text">Las bases de datos clave-valor (BDCV), también conocidas como almacenes clave-valor, son un tipo de noSQL que almacena datos como un conjunto de pares clave-valor. En una BDCV, cada dato se almacena como un par: una clave única que identifica al dato y un valor que contiene los datos en sí. Las claves suelen ser cadenas de caracteres, pero también pueden ser números u otros tipos de datos. Los valores pueden ser de cualquier tipo, incluyendo cadenas de caracteres, números, imágenes, objetos binarios, etc.</p>
+                        </div>
+                      </div>
 
                   <!-- Redis -->
                  <div class="row row-cols-1 g-4 py-4">
@@ -77,9 +86,11 @@
                           <h3 class="card-title"><strong>REDIS</strong></h3>
                           <img src="img/redis.png" class="card-img-top" style="width: 300px;" alt="MongoDB">
                           <p class="card-text">Redis es un almacén de datos clave-valor en memoria de código abierto, muy popular y utilizado con frecuencia. Funciona como una especie de diccionario gigante que permite almacenar y recuperar datos rápidamente. A diferencia de las bases de datos tradicionales que guardan información en un disco duro, Redis almacena todo en la memoria RAM de la computadora, lo que lo hace extremadamente veloz para acceder a la información.</p>
-                        
+                          <h5 class="card-title"><strong>Funcionamiento:</strong></h5>
+                          <p class="card-text">A diferencia de las bases de datos relacionales tradicionales, Redis no almacena datos en un disco duro, sino en la memoria principal del servidor. Esto permite que Redis sea extremadamente rápida para leer y escribir datos. Redis también utiliza una arquitectura distribuida, lo que significa que se puede escalar horizontalmente agregando más servidores al clúster.</p>
+
                           <!-- caracteristicas -->
-                          <h6 class="card-title"><strong>Características:</strong></h6>
+                          <h5 class="card-title"><strong>Características:</strong></h5>
 
                           <ol class="list-group list-group-numbered py-3">
                             <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -92,7 +103,7 @@
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                               <div class="ms-2 me-auto">
                                 <div class="fw-bold">Flexibilidad</div>
-                                ofrece soporte para diversas estructuras de datos, incluyendo cadenas de texto, listas, conjuntos ordenados, conjuntos desordenados y hashes. Esta versatilidad permite almacenar diferentes tipos de información de manera eficiente.
+                                Ofrece soporte para diversas estructuras de datos, incluyendo cadenas de texto, listas, conjuntos ordenados, conjuntos desordenados y hashes. Esta versatilidad permite almacenar diferentes tipos de información de manera eficiente.
                               </div>
                             </li>
 
@@ -111,6 +122,35 @@
                               </li>
                           </ol>
 
+                          <!-- desventajas -->
+                          <h5 class="card-title"><strong>Desventajas:</strong></h5>
+
+                          <ol class="list-group list-group-numbered py-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Falta de estructura</div>
+                                Redis no tiene una estructura de datos definida, lo que puede dificultar la consulta de datos complejos. Esto puede requerir un mayor esfuerzo en la gestión de datos y en la creación de consultas para recuperar información específica.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Almacenamiento en memoria</div>
+                                Redis almacena datos en memoria, lo que significa que los datos se pueden perder si el servidor falla. La cantidad de datos que se pueden almacenar en memoria está limitada por la capacidad de la RAM del servidor. Escalar horizontalmente implica agregar más servidores al clúster, lo que aumenta la complejidad de la gestión.
+                              </div>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Soporte de consultas limitado</div>
+                                Redis no dispone de un lenguaje de consulta estructurado como SQL, lo que limita la forma en que se pueden recuperar y manipular los datos.
+                              </div>
+                            </li>
+                          </ol>
+
+                            <!-- sitio documentacion -->
+                            <p class="card-text"><strong>Página Oficial de Documentación:</strong> <a href="https://redis.io/es/">Redis</a></p>
+                          
                         </div>
                       </div>
                     </div>
